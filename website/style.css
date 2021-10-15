@@ -1,0 +1,107 @@
+body {
+    background: url('background (2).jpg');
+    background-size: cover;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.snow {
+    background: url('snow.png');
+    height: 100hv;
+    width: 200hv;
+    background-repeat: repeat;
+    animation: snow 2s infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 50px 50px;
+    }
+    20% {
+        background-position: 100px 100px;
+    }
+    30% {
+        background-position: 150px 150px;
+    }
+    40% {
+        background-position: 200px 200px;
+    }
+    60% {
+        background-position: 250px 250px;
+    }
+    80% {
+        background-position: 300px 300px;
+    }
+    100% {
+        background-position: 350px 350px;
+    }
+}
+
+
+/*our app style*/
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#app .headline {
+    font-size: 35px;
+    font-weight: 700;
+    color: orange;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+#app .zip input,
+#app .feel textarea {
+    background-color: rgb(137, 169, 170);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    border-color: transparent transparent transparent transparent;
+    margin-bottom: 20px;
+}
+
+#app .feel button {
+    display: block;
+    background-color: rgb(16, 74, 77);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    width: 250px;
+    text-align: center;
+    margin-left: 125px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#app .entry {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 112, 0.5634628851540616) 35%, rgba(0, 212, 255, 1) 100%);
+    padding: 50px;
+    color: orange;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+
+@media (max-width:600px) {
+    #app .headline {
+        font-size: 30px;
+    }
+    #app .zip input,
+    #app .feel textarea {
+        max-width: 300px;
+    }
+    #app .feel button {
+        margin-left: 25px;
+    }
+}

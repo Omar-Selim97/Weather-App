@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.1",
+  "description": "First Weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "review"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omar-Raslan/Weather-App.git"
+  },
+  "author": "Omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omar-Raslan/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Omar-Raslan/Weather-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
